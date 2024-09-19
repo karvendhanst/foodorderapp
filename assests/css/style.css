@@ -30,9 +30,13 @@ li{
 .nav-sign-in-btn button:focus{
     box-shadow: none;
 }
+.nav-item{
+    margin: auto;
+}
 .nav-link{
     position: relative;
     transition: .4s;
+    display: inline-block;
 }
 .nav-link::before{
     content: "";
@@ -52,6 +56,12 @@ li{
 .nav-link:hover{
     color: #FF623F !important;
     transition: .4s;
+}
+.navbar-toggler{
+    color: #222;
+    padding: 10px 12px;
+    border: none;
+    font-size: 24px;
 }
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -73,7 +83,7 @@ li{
 }
 .carousel{
     position: relative;
-    border-radius: 22px;
+    border-radius: 10px;
     overflow: hidden;
 }
 .carousel::before{
