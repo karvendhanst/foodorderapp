@@ -11,17 +11,9 @@ a{
 li{
     list-style-type: none;
 }
-body{
-    background-color: #0b0d15;
-}
 /* navbar */
 .navbar{
-    background-color: #0b0d15;
-    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
-    100%, 0.075), 0 0 0 1px hsla(0, 0%, 0%, 0.05),
-    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
-    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
-    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+    background-color: #fff;
 }
 .navbar-brand{
     color: #FF623F !important;
@@ -32,25 +24,15 @@ body{
 .nav-sign-in-btn button:hover{
     font-weight: 500;
     border-radius: 3px;
-    color: #FF623F;
-    background-color: #20232c;
-    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
-    100%, 0.075), 0 0 0 1px hsla(0, 0%, 0%, 0.05),
-    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
-    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
-    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+    background-color: #FF623F;
+    color: #fff;
 }
 .nav-sign-in-btn button:focus{
     box-shadow: none;
 }
-.nav-item{
-    margin: auto;
-}
 .nav-link{
     position: relative;
     transition: .4s;
-    color: #fff !important;
-    display: inline-block;
 }
 .nav-link::before{
     content: "";
@@ -71,12 +53,6 @@ body{
     color: #FF623F !important;
     transition: .4s;
 }
-.navbar-toggler{
-    color: #fff !important;
-    padding: 10px 12px;
-    border: none;
-    font-size: 24px;
-}
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -93,11 +69,10 @@ body{
     width: 10px !important;
     height: 10px !important;
     border-radius: 50%;
-    margin-bottom: -18px;
 }
 .carousel{
     position: relative;
-    border-radius: 10px;
+    border-radius: 22px;
     overflow: hidden;
 }
 .carousel::before{
@@ -107,12 +82,12 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.402);
+    background-color: rgba(0, 0, 0, 0.425);
     z-index: 1;
 }
 .carousel-content{
     position: absolute;
-    top: 44%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -152,39 +127,13 @@ body{
 }
 @media (max-width:600px){
     .carousel-item img{
-        height: 200px;
+        height: 220px;
         object-fit: cover;
         object-position: top;
-    }
-    .carousel-title{
-        font-size: 2rem;
     }
 }
 /* Home section */
 /* Login */
-.modal-content{
-    background-color: #0b0d15 !important;
-    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
-    100%, 0.075), 0 0 0 1px hsla(0, 0%, 0%, 0.05),
-    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
-    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
-    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
-    color: #fff;
-}
-.modal-header{
-    border-bottom: 1px solid rgb(50, 50, 50);
-}
-.modal-footer{
-    border-top: 1px solid rgb(50, 50, 50);
-}
-.modal-header button:focus{
-    box-shadow: none;
-}
-.modal-header .btn-close{
-    filter: invert(0.5) sepia(1) 
-            saturate(5) hue-rotate(325deg);
-    color: #fff !important;
-}
 .login-input{
     position: relative;
 }
@@ -199,29 +148,20 @@ body{
 }
 .login-input input{
     padding-left: 70px;
-    background-color: #20232c;
-    color: #fff !important;
-    outline: none;
-    border: none;
 }
 .login-input input:focus{
     box-shadow: none;
-    background-color: #20232c;
-    outline: none;
-    border: none;
 }
 .login-google img{
     width: 20px;
 }
 .login-otp,
-.login-otp:hover,
-.login-otp:focus{
+.login-otp:hover{
     margin: 20px 0 30px;
     background-color: #FF623F;
     color: #fff;
     width: 100%;
     padding: 12px 0;
-    box-shadow: none;
 }
 .login-divider{
     display: flex;
@@ -230,30 +170,24 @@ body{
 }
 .login-divider span{
     display: block;
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(194, 194, 194);
     height: 1px;
     width: 100%;
 }
 .login-email,
-.login-google,
-.login-email:hover,
-.login-google:hover,
-.login-google:focus,
-.login-email:focus{
+.login-google{
     display: block;
     text-align: center;
-    border: 1px solid rgb(51, 51, 51);
+    border: 1px solid rgb(202, 202, 202);
     margin: 25px 0;
     padding: 12px 0;
-    color: #fff;
-    box-shadow: none;
 }
 .login-email i{
     color: #FF623F;
 }
 .modal-footer span{
     margin-right: auto;
-    color: #fff;
+    color: rgb(141, 141, 141);
     font-weight: 300;
 }
 .modal-footer span a{
@@ -262,7 +196,7 @@ body{
 /* Login */
 /* Menu section */
 .menu-list{
-    color: #fff;
+    color: rgb(70, 70, 70);
 }
 .menu-list-items{
     display: flex;
@@ -285,7 +219,7 @@ body{
     margin-left: -24px;
 }
 .menu-item-name{
-    color: #fff;
+    color: rgb(70, 70, 70);
     font-weight: 300;
     display: block;
 }
@@ -297,19 +231,13 @@ body{
     max-width: 18rem;
     transition: .5s;
     cursor: pointer;
-    background-color: #0b0d15;
-    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
-    100%, 0.075), 0 0 0 1px hsla(0, 0%, 0%, 0.05),
-    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
-    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
-    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
 }
 .card:hover{
     transform: translateY(-20px);
     transition: .5s;
 }
 .menu-section{
-    color: #fff;
+    color: rgb(70, 70, 70);
 }
 .card-title{
     display: inline-block;
@@ -333,29 +261,19 @@ body{
     margin-top: 15px;
     font-size: 22px;
     font-weight: 600;
-    color: #fff;
+    color: #3e3e3e;
 }
-.card-add-cart{
+.card-add-cart,
+.card-add-cart:hover{
+    color: #fff;
+    background-color: #FF623F;
     padding: 10px 15px;
     border-radius: 6px;
-    color: #FF623F;
-    background-color: #20232c;
-    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
-    100%, 0.075), 0 0 0 1px hsla(0, 0%, 0%, 0.05),
-    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
-    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
-    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
-    transition: .4s;
-}
-.card-add-cart:hover{
-    background-color: #FF623F;
-    color: #fff;
-    transition: .4s;
 }
 /* Menu section */
 /* App Section */
 .app-section{
-    color: #fff;
+    color: rgb(70, 70, 70);
 }
 .app-img img{
     margin-top: 30px;
@@ -378,29 +296,23 @@ body{
 /* Accordion section */
 .accordion-section{
     margin: 2rem 0;
-    color: #fff;
+    color: rgb(70, 70, 70);
 }
 .accordion-header .accordion-button:after {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FF623F'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+.accordion-header{
+    color: #FF623F !important;
 }
 .accordion-header button:focus{
     box-shadow: none;
     color: #FF623F !important;
     background-color: transparent;
 }
-.accordion-button,.accordion-body{
-    background-color: #0b0d15 !important;
-    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
-    100%, 0.075), 0 0 0 1px hsla(0, 0%, 0%, 0.05),
-    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
-    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
-    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
-    color: #fff;
-}
 /* Accordion section */
 /* Testimonal Section */
 .testimonal-section{
-    color: #fff;
+    color: rgb(70, 70, 70);
 }
 .testi-review{
     width: 80px !important;
@@ -420,12 +332,6 @@ body{
     transition: .5s;
     border-radius: 0;
     border-left: 3px solid #FF623F;
-    background-color: #0b0d15 !important;
-    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
-    100%, 0.075), 0 0 0 1px hsla(0, 0%, 0%, 0.05),
-    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
-    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
-    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
 }
 .testimonal-section .card:hover{
     transform: scale(1.1);
@@ -435,23 +341,17 @@ body{
 /* blog section */
 .blog-section{
     margin: 2rem 0;
-    color: #fff;
+    color: rgb(70, 70, 70);
 }
 .blog-section .card{
     border-radius: 0;
     text-align: center;
-    background-color: #0b0d15 !important;
-    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
-    100%, 0.075), 0 0 0 1px hsla(0, 0%, 0%, 0.05),
-    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
-    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
-    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+}
+.blog-section .card-title{
+    color: #FF623F;
 }
 .blog-section .card-body .card-bottom p{ 
     font-size: 12px;
-}
-.blog-section .card-body .card-title{
-    color: #FF623F;
 }
 /* blog section */
 /* Footer Banner */
@@ -461,7 +361,7 @@ body{
     padding: 18px 22px;
     text-align: center;
     color: #fff;
-    background-image: url(../images/banner/c1.jpg);
+     background-image: url(../images/banner/c1.jpg);
     background-size: cover;
     background-position: right;
     position: relative;
@@ -514,12 +414,7 @@ body{
     margin: 2rem 0 0;
     padding: 30px 0;
     color: #fff;
-    background-color: #0b0d15 !important;
-    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
-    100%, 0.075), 0 0 0 1px hsla(0, 0%, 0%, 0.05),
-    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
-    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
-    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+    background-color: #222;
 }
 .footer-section h3{
     font-size: 1rem;
@@ -555,14 +450,10 @@ body{
     font-size: 1.5rem;
 }
 .bottom-footer{
-    background-color: #0b0d15 !important;
-    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
-    100%, 0.075), 0 0 0 1px hsla(0, 0%, 0%, 0.05),
-    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
-    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
-    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+    background-color: #222;
     padding: 20px 0;
     color: #fff;
+    border-top: 1px solid rgb(136, 136, 136);
 }
 .bottom-footer-link{
     background-color: #FF623F;
