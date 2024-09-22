@@ -4,6 +4,7 @@
 /* Reset */
 *{
     font-family: "Lexend", sans-serif;
+    scroll-padding: 5rem;
 }
 a{
     text-decoration: none;
