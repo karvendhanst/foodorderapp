@@ -89,7 +89,7 @@
                         <div class="login-input-in">
                             <img src="./assests/images/india.png"> +91
                         </div>
-                        <input type="text" class="form-control" placeholder="Phone Number">
+                        <input type="text" class="form-control" placeholder="Phone Number" minlength="10" maxlength="10">
                     </div>
                     <a href="#" class="login-otp btn">Send One Time Password</a>
                     <div class="login-divider">
@@ -238,7 +238,7 @@
                                 <p class="card-text">Let food be thy medicine and medicine be thy food.</p>
                                 <div class="card-bottom">
                                     <p class="card-price">₹ 120</p>
-                                    <a href="#" class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
+                                    <a class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -256,8 +256,8 @@
                                 </span>
                                 <p class="card-text">Let food be thy medicine and medicine be thy food.</p>
                                 <div class="card-bottom">
-                                    <p class="card-price">₹ 120</p>
-                                    <a href="#" class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
+                                    <p class="card-price">₹ 80</p>
+                                    <a class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -275,8 +275,8 @@
                                 </span>
                                 <p class="card-text">Let food be thy medicine and medicine be thy food.</p>
                                 <div class="card-bottom">
-                                    <p class="card-price">₹ 120</p>
-                                    <a href="#" class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
+                                    <p class="card-price">₹ 220</p>
+                                    <a class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -294,8 +294,8 @@
                                 </span>
                                 <p class="card-text">Let food be thy medicine and medicine be thy food.</p>
                                 <div class="card-bottom">
-                                    <p class="card-price">₹ 120</p>
-                                    <a href="#" class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
+                                    <p class="card-price">₹ 310</p>
+                                    <a class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -313,8 +313,8 @@
                                 </span>
                                 <p class="card-text">Let food be thy medicine and medicine be thy food.</p>
                                 <div class="card-bottom">
-                                    <p class="card-price">₹ 120</p>
-                                    <a href="#" class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
+                                    <p class="card-price">₹ 150</p>
+                                    <a class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -332,8 +332,8 @@
                                 </span>
                                 <p class="card-text">Let food be thy medicine and medicine be thy food.</p>
                                 <div class="card-bottom">
-                                    <p class="card-price">₹ 120</p>
-                                    <a href="#" class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
+                                    <p class="card-price">₹ 100</p>
+                                    <a class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -351,8 +351,8 @@
                                 </span>
                                 <p class="card-text">Let food be thy medicine and medicine be thy food.</p>
                                 <div class="card-bottom">
-                                    <p class="card-price">₹ 120</p>
-                                    <a href="#" class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
+                                    <p class="card-price">₹ 360</p>
+                                    <a class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -370,8 +370,8 @@
                                 </span>
                                 <p class="card-text">Let food be thy medicine and medicine be thy food.</p>
                                 <div class="card-bottom">
-                                    <p class="card-price">₹ 120</p>
-                                    <a href="#" class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
+                                    <p class="card-price">₹ 260</p>
+                                    <a class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -389,8 +389,8 @@
                                 </span>
                                 <p class="card-text">Let food be thy medicine and medicine be thy food.</p>
                                 <div class="card-bottom">
-                                    <p class="card-price">₹ 120</p>
-                                    <a href="#" class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
+                                    <p class="card-price">₹ 420</p>
+                                    <a class="card-add-cart"><i class="fa-solid fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -629,14 +629,51 @@
         </button>
     </div>
 
-    <!-- Message-alert -->
-    <div class="message-alert">
-        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
-            title="Any Quries">
-            <i class="fa-regular fa-message"></i>
+    <!-- cart-modal -->
+    <div class="cart-icon">
+        <button type="button" class="btn">
+            <i class="fa-solid fa-bag-shopping"></i>
         </button>
     </div>
-    <!-- Message-alert -->
+
+    <!-- cart-section -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="cart-title">
+                <h3>Your Cart</h3>
+            </div>
+            <ul class="cart-list">
+    
+                <!-- <li class="cart-list-item">
+                    <div class="cart-item-img">
+                        <img src="./assests/images/menu-food/food_4.png" alt="img">
+                    </div>
+                    <div class="cart-item-info">
+                        <h3 class="item-name">Greek Saled</h3>
+                        <p class="item-price">₹120 <i class="fa-solid fa-angles-right"></i> ₹120</p>
+                        <input type="number" class="item-qty" value="1">
+    
+                    </div>
+                    <div class="cart-item-trash">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </div>
+                </li> -->
+    
+            </ul>
+            <div class="cart-total">
+                <p>Total <i class="fa-solid fa-angle-right"></i> ₹ <span>0</span></p>
+            </div>
+            <div class="cart-order-btn" onclick="oredered()">
+                <button type="button" class="btn">Order</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- cart-section -->
+    <!-- cart-modal -->
 
     <!-- footer -->
     <footer class="footer-section">
